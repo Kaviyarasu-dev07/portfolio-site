@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import {
-  Download,
   ArrowRight,
   Code2,
   Server,
@@ -332,7 +331,7 @@ export const About = () => (
           </div>
         </div>
 
-        {/* ── PROFESSIONAL DUAL CTAS: Download CV + Let's Work Together ── */}
+        {/* ── PROFESSIONAL CTA: Let's Work Together ── */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -341,10 +340,8 @@ export const About = () => (
           className="about-cta-wrapper"
           style={{
             display: 'flex',
-            flexWrap: 'wrap',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '14px',
           }}
         >
           <a
@@ -354,12 +351,12 @@ export const About = () => (
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              padding: '13px 30px',
+              padding: '14px 34px',
               borderRadius: '12px',
               background: 'linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)',
               color: '#ffffff',
               fontWeight: 700,
-              fontSize: '0.95rem',
+              fontSize: '0.96rem',
               textDecoration: 'none',
               boxShadow: '0 6px 22px rgba(37, 99, 235, 0.3)',
               transition: 'transform 0.18s, box-shadow 0.18s',
@@ -374,38 +371,6 @@ export const About = () => (
             }}
           >
             Let's Work Together <ArrowRight size={16} />
-          </a>
-
-          <a
-            href="#"
-            className="btn-about-secondary"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '13px 28px',
-              borderRadius: '12px',
-              background: '#ffffff',
-              border: '1.5px solid rgba(37, 99, 235, 0.22)',
-              color: '#1e293b',
-              fontWeight: 600,
-              fontSize: '0.95rem',
-              textDecoration: 'none',
-              boxShadow: '0 2px 10px rgba(37, 99, 235, 0.05)',
-              transition: 'background 0.18s, border-color 0.18s, transform 0.18s',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#eff6ff';
-              e.currentTarget.style.borderColor = 'rgba(37, 99, 235, 0.42)';
-              e.currentTarget.style.transform = 'translateY(-2px)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = '#ffffff';
-              e.currentTarget.style.borderColor = 'rgba(37, 99, 235, 0.22)';
-              e.currentTarget.style.transform = 'translateY(0)';
-            }}
-          >
-            <Download size={16} color="#2563eb" /> Download CV
           </a>
         </motion.div>
 
@@ -464,7 +429,7 @@ export const About = () => (
           margin-bottom: 36px !important;
           text-align: left !important;
         }
-        .btn-about-primary, .btn-about-secondary {
+        .btn-about-primary {
           width: 100%;
           justify-content: center;
         }
